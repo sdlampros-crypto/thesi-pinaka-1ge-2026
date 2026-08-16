@@ -1,0 +1,19 @@
+name: thesi_pinaka
+description: Θέση Πίνακα 1ΓΕ/2026 - offline εφαρμογή αναζήτησης εκπαιδευτικών.
+publish_to: "none"
+version: 1.0.0+1
+
+environment:
+  sdk: ">=3.4.0 <4.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  sqflite: ^2.4.2
+  path: ^1.9.1
+  shared_preferences: ^2.5.3
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/db/ige2026.db

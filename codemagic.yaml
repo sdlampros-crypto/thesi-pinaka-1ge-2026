@@ -1,14 +1,12 @@
 workflows:
   android-apk:
-    name: Android APK
+    name: Θέση Πίνακα 1ΓΕ/2026 APK
     max_build_duration: 60
     environment:
       flutter: stable
     scripts:
       - name: Get packages
         script: flutter pub get
-      - name: Create Android platform
-        script: flutter create --platforms=android .
       - name: Build debug APK
         script: flutter build apk --debug
     artifacts:

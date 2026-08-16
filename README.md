@@ -1,19 +1,10 @@
-# Θέση Πίνακα 1ΓΕ/2026 — Flutter
+# Θέση Πίνακα 1ΓΕ/2026 — Flutter Android Ready
 
-Νέα έκδοση χωρίς εξάρτηση από Android Studio στον δικό σου υπολογιστή.
+This version includes the Android platform folder so Codemagic can detect and build Android.
 
-Περιλαμβάνει:
-- 43 πίνακες / 38.051 εγγραφές
-- offline SQLite βάση
-- αναζήτηση με Α.Μ., επώνυμο, όνομα ή μοναδικό κωδικό
-- θέση, μόρια, πόσοι προηγούνται
-- «Η θέση μου» με αποθήκευση μόνο στη συσκευή
-- έτοιμο `codemagic.yaml` για cloud APK build
+Workflow:
+- Flutter stable
+- `flutter pub get`
+- `flutter build apk --debug`
 
-Για cloud build:
-1. Ανέβασε αυτό το project σε GitHub/GitLab/Bitbucket.
-2. Σύνδεσέ το με Codemagic.
-3. Επίλεξε το workflow `Android APK`.
-4. Μετά το build κατέβασε το `app-debug.apk`.
-
-Σημείωση: Το cloud build γίνεται σε εξωτερική υπηρεσία. Το ZIP από μόνο του δεν είναι APK.
+The app contains the offline 1ΓΕ/2026 SQLite database, 43 tables and 38,051 records.
